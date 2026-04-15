@@ -24,3 +24,14 @@ SS Database: <img width="2560" height="1440" alt="image" src="https://github.com
 SS Tabel user: <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/bfe51e86-4d6d-481b-918b-8001a7b85eb6" />
 
 SS manage produk: <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/8c28b28f-dbac-4d10-8794-9c7333636e91" />
+
+SS code: <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/43fc728e-a282-4581-97e9-f730b2e8e87c" />
+
+
+## Validasi store
+
+SS file validasi StoreProductRequest: <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/d41f888b-c038-41a0-84a8-69f24c88bc7f" />
+
+SS file validasi UpdateProductRequest: <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/8ef103f2-7b6c-4305-a16b-51f8cfb8f382" />
+
+SS bukti validasi bekerja: <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/e6232c80-41a9-4483-9927-e44ffc2b2af4" />
