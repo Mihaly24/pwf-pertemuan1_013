@@ -18,6 +18,12 @@
                     <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
                         {{ __('About') }}
                     </x-nav-link>
+
+                    @can('manage-product')
+                        <x-nav-link :href="route('produk.index')" :active="request()->routeIs('produk.*')">
+                            {{ __('Products') }}
+                        </x-nav-link>
+                    @endcan
                 </div>
             </div>
 
