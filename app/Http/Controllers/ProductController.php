@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreProductRequest;
+use App\Http\Requests\UpdateProductRequest;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 
@@ -23,18 +24,14 @@ class ProductController extends Controller
     }
 
     // 3. Menyimpan data produk baru ke database
-    public function store(Request $request)
+    public function store(StoreProductRequest $request)
     {
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'qty' => 'required|integer',
-            'price' => 'required|numeric',
-        ]);
+        $validated = $request->validated();
 
         Product::create([
-            'name' => $request->name,
-            'qty' => $request->qty,
-            'price' => $request->price,
+            'name' => $validated['name'],
+            'qty' => $validated['qty'],
+            'price' => $validated['price'],
             'user_id' => Auth::id(), 
         ]);
         
@@ -53,23 +50,19 @@ class ProductController extends Controller
     }
 
     // 5. Menyimpan perubahan data produk ke database
-    public function update(Request $request, Product $produk)
+    public function update(UpdateProductRequest $request, Product $produk)
     {
         // Pastikan hanya pemilik produk atau admin yang bisa update (Tugas Poin 5)
         if (Gate::denies('update', $produk)) {
             abort(403, 'Anda tidak memiliki akses untuk mengubah produk ini.');
         }
 
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'qty' => 'required|integer',
-            'price' => 'required|numeric',
-        ]);
+        $validated = $request->validated();
 
         $produk->update([
-            'name' => $request->name,
-            'qty' => $request->qty,
-            'price' => $request->price,
+            'name' => $validated['name'],
+            'qty' => $validated['qty'],
+            'price' => $validated['price'],
         ]);
 
         return redirect()->route('produk.index')->with('success', 'Produk berhasil diubah!');
