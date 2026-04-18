@@ -35,3 +35,16 @@ SS file validasi StoreProductRequest: <img width="2560" height="1440" alt="image
 SS file validasi UpdateProductRequest: <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/8ef103f2-7b6c-4305-a16b-51f8cfb8f382" />
 
 SS bukti validasi bekerja: <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/e6232c80-41a9-4483-9927-e44ffc2b2af4" />
+
+## Component add, edit, delete button
+
+Add: <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/f7f6e7cf-24bc-4a9d-b916-aa2829c15cd0" />
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/7cf3dab2-ae49-4595-a740-660767b16b6c" />
+
+Edit: <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/7715ad65-0aca-486e-9f0a-8dd1a0873001" />
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/f6e02282-b2a6-4bbe-9727-a2164f5d22ff" />
+
+Delete: <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/0f695232-03e1-4df9-b532-0f74d2576b78" />
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/dde1a37a-6203-490f-b17b-db21af8b177a" />
+
+
